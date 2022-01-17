@@ -1,7 +1,7 @@
 # Responsive-SimpleLife
 
 ## Preview:
-[https://ketankarki.github.io/eBird-Site-Clone/index.html](https://ketankarki.github.io/eBird-Site-Clone/index.html)
+[https://ketankarki.github.io/Responsive-SimpleLife/](https://ketankarki.github.io/Responsive-SimpleLife/)
 
 * This is a responsive website which I made while practicing from a youtube video of freecodecamp.org which was instructed by Kevin Powell.
 * To watch the youtube video, click the image below
