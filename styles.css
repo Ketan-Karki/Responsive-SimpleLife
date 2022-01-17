@@ -1,0 +1,314 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    background-color: rgb(208, 228, 231);
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+img
+{
+    max-width: 100%;
+    display: block;
+}
+
+.container
+{
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.container-nav
+{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header
+{
+    background-color: powderblue;
+    padding: 2em 0 4em 0;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+footer {
+    background: #143774;
+    color: white;
+    text-align: center;
+    padding: 3em 0 0.25em 0;
+}
+
+footer p {
+    margin-bottom: 0.5em;
+}
+
+h1,
+h2,
+h3{
+    color: #143774;
+    font-family: 'Lora',serif;
+    font-weight: 400;
+}
+
+h3 {
+    color: #1792d2;
+}
+
+header h1
+{
+    color: #143774;
+    font-family: 'Lora',serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #1792D2;
+}
+
+a:hover,
+a:focus {
+    color: #143774;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.subtitle
+{
+    color: #1792D2;
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    margin-bottom: 2em;
+}
+
+.article-title
+{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+.article-body {
+    margin-bottom: 1.5em;
+}
+
+.article-read-more,
+.article-info {
+    font-size: 0.875rem;
+}
+
+.article-info {
+    margin: 1em 0 2em 0;
+}
+
+.article-read-more {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration:underline;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav li
+{
+    margin: 0.5em 0;
+}
+
+nav a
+{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    color: #707070;
+    font-weight: 700;
+    padding: 0.25em 0;
+}
+
+nav a:hover,a:focus
+{
+    color: #1792d2;
+}
+
+.current-page
+{
+    border-bottom: 2px solid #707070;
+}
+
+.current-page:hover
+{
+    color: #707070;
+}
+
+.article-featured {
+    border-bottom: 1px solid ;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.article-image {
+    order: -2;
+}
+
+.article-info {
+    order: -1;
+}
+
+.article-recent {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+}
+
+.article-recent-main {
+    order: 2;
+}
+
+.article-recent-secondary {
+    order: 1;
+}
+
+.article-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.widget {
+    border: 20px solid rgb(167, 206, 211);
+    margin-bottom: 2em;
+    padding: 1em;
+    font-family: 'Ubuntu',sans-serif
+}
+
+.widget-title {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: 'Ubuntu',sans-serif;
+    margin-bottom: 1em;
+}
+
+.widget-img {
+    margin-bottom: 0.25em;
+    order: -1;
+    height: 80px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.widget-body {
+    font-weight: 400;
+    color: #143774;
+}
+
+.widget-recent {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid rgb(167, 206, 211);
+    margin-bottom: 1em;
+}
+
+.widget-recent-title {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-bottom: 1em; 
+    color: #143774; 
+}
+
+.widget-recent:last-child {
+    border: 0;
+    margin: 0;
+}
+
+.img-full
+{
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 2em;
+}
+
+.about-headings {
+    margin-bottom: 1em;
+}
+
+
+@media (min-width:739px) {
+    .container-nav,
+    .container-flex,
+    nav ul {
+        flex-direction: row;
+    }
+
+    nav li {
+        margin-left: 2em;
+    }
+    
+    main {
+        width: 70%;
+    }
+
+    aside {
+        width: 25%;
+        min-width: 200px;
+        margin-left: 1em;
+    }
+
+    .article-recent {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .article-recent-main {
+        width: 68%;
+    }
+
+    .article-recent-secondary {
+        width: 30%;
+    }
+
+    .article-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+}
